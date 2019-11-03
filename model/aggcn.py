@@ -1,6 +1,4 @@
-"""
-GCN model for relation extraction.
-"""
+
 import copy
 import math
 
@@ -15,7 +13,6 @@ from utils import constant, torch_utils
 
 
 class GCNClassifier(nn.Module):
-    """ A wrapper classifier for GCNRelationModel. """
 
     def __init__(self, opt, emb_matrix=None):
         super().__init__()
