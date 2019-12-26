@@ -1,2 +1,3 @@
 # BB19-rel
-The code will be published soon
+This is the code for paper "Bacteria Biotope Relation Extraction via Lexical Chains
+and Dependency Graphs".
