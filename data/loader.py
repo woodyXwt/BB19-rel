@@ -1,6 +1,3 @@
-"""
-Data loader for TACRED json files.
-"""
 
 import json
 import random
@@ -132,9 +129,8 @@ def generate_adj(heads_list):
     head_len = max(len(x) for x in heads_list)
     for head in heads_list:
         adj = torch.FloatTensor(head_len, head_len).fill_(0)
-        for i in range(head_len):
-            adj[i][i] = 1
         for i, index_list in enumerate(head):
+            adj[i][i] = 1
             for s in index_list:
                 if s != 0:
                     adj[i][s-1] = 1
