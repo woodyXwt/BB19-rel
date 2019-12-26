@@ -1,6 +1,3 @@
-"""
-Train a model on TACRED.
-"""
 
 import os
 import sys
